@@ -1,0 +1,27 @@
+body {
+  background-image: url('https://images.pexels.com/photos/280264/pexels-photo-280264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace; /* vintage/tech vibe */
+}
+
+#digitalClock {
+  color: #f5e9d3; /* warm off-white/beige */
+  font-size: 5rem;
+  font-weight: 700;
+  background-color: rgba(30, 30, 30, 0.6); /* dark translucent background */
+  padding: 1.8rem 3.5rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.15em;
+  user-select: none;
+  backdrop-filter: blur(8px);
+}

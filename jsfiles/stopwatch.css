@@ -1,0 +1,29 @@
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* deep blue gradient */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stopwatch {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.9); /* glass effect */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+#display {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #00060e;
+}

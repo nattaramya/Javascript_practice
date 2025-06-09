@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="x"> 00:00:00:00 </h1>
+    <button id="a">start</button>
+    <button id="b">reset</button>
+    <button id="c">stop</button>
+    <script>
+        let xx=0;
+        let interval;
+        let isrunning = false;
+
+        document.getElementById("a").onclick = function(){
+            if (!isrunning) {
+                isrunning = true;
+                startTime = new Date();
+                interval = setInterval(update, 10);
+            }
+        }
+
+        document.getElementById("b").onclick = function(){
+            clearInterval(interval);
+            isrunning = false;
+            elapsedTime = 0;
+            document.getElementById("x").innerHTML = "00:00:00:00";
+            startTime = new Date();
+        
+        }
+
+        document.getElementById("c").onclick = function(){
+            if (isrunning) {
+                clearInterval(interval);
+                isrunning = false;
+                elapsedTime = new Date(new Date() - startTime);
+            }
+        }
+        function update(){
+            const currentTime = new Date();
+            const elapsedTime = new Date(currentTime - startTime);
+            let hours = Math.floor(elapsedTime / 3600000);
+            let minutes = Math.floor((elapsedTime % 3600000) / 60000);
+            let seconds = Math.floor((elapsedTime % 60000) / 1000);
+            let milliseconds = Math.floor((elapsedTime % 1000) / 10);
+            hours = (hours < 10) ? "0" + hours : hours;
+            minutes = (minutes < 10) ? "0" + minutes : minutes; 
+            seconds = (seconds < 10) ? "0" + seconds : seconds;
+            milliseconds = (milliseconds < 10) ? "0" + milliseconds : milliseconds;
+            document.getElementById("x").innerHTML = hours + ":" + minutes + ":" + seconds + ":" + milliseconds;
+        }   
+    </script>
+</body>
+</html>

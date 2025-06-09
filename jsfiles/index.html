@@ -1,0 +1,426 @@
+<!-- 1****passenger incrementation
+<html>
+    <head></head>
+        <p id="hello"></p>
+        <h id="value">0</h>
+        <button  id="incre" onclick="increment()">Add</button>
+        <h id="svalue"></h>
+        <button id="save" onclick="save()">Save</button>
+        <script src="index.js"></script>
+        
+</html> -->
+
+
+<!-- 2****Small Calculator
+<html>
+    <head></head>
+    <span id="n1"></span>
+    <span id="n2"></span><br>
+    <button id="sum" onclick="sum()">sum</button>
+    <button id="sub" onclick="sub()">sub</button>
+    <button id="mul" onclick="mul()">mul</button><br>
+    <span id="sumd"></span>
+    <script src="index.js"></script>
+</html> -->
+
+
+<!-- 3***input saving -->
+<!-- <html>
+    <head></head>
+    <input type="text" id="input"></html>
+    <button  id="saveid">Save</button>
+    <ul id="ulid"></ul>
+    <script src="index.js"></script>
+</html> -->
+
+
+<!-- 4***Event listener -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Two Cards Example</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card-buttons {
+      margin-top: 15px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .card-buttons button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .btn-secondary {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .btn-secondary:hover {
+      background-color: #1e7e34;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card" id="card1">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Web Design">
+      <div class="card-content">
+        <h3 class="card-title">Web Design</h3>
+        <p class="card-text">Explore modern web design trends and techniques to enhance user experience.</p>
+        <div class="card-buttons">
+          <button class="btn-primary" id="bt1">Learn More</button>
+          <button class="btn-secondary" id="bt2">Contact</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=180&w=300" alt="Team Collaboration">
+      <div class="card-content">
+        <h3 class="card-title">Team Collaboration</h3>
+        <p class="card-text">Discover effective strategies for team collaboration and project management.</p>
+        <div class="card-buttons">
+          <button class="btn-primary">Learn More</button>
+          <button class="btn-secondary">Contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+<!-- 5***simple Counter
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Counter App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .counter-container {
+      background-color: white;
+      width: 300px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .counter {
+      font-size: 48px;
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .increase {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .decrease {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    .reset {
+      background-color: #007bff;
+      color: white;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="counter-container">
+    <h1>Counter App</h1>
+    <div class="counter" id="counter">0</div>
+    <button class="increase" onclick="increaseCounter()">Increase</button>
+    <button class="decrease" onclick="decreaseCounter()">Decrease</button>
+    <button class="reset" onclick="resetCounter()">Reset</button>
+  </div>
+
+  <script>
+    let count = 0;
+    const counterDisplay = document.getElementById("counter");
+
+    function updateDisplay() {
+      counterDisplay.textContent = count;
+    }
+
+    function increaseCounter() {
+      count++;
+      updateDisplay();
+    }
+
+    function decreaseCounter() {
+      count--;
+      updateDisplay();
+    }
+
+    function resetCounter() {
+      count = 0;
+      updateDisplay();
+    }
+  </script>
+</body>
+</html> -->
+
+
+
+<!-- ***Weather App -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #2980b9, #6dd5fa);
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .weather-container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    input {
+      padding: 10px;
+      width: 80%;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #fff;
+      color: #2980b9;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .result {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .weather-icon {
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Weather App</h1>
+
+  <div class="weather-container">
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="getWeather()">Get Weather</button>
+
+    <div class="result" id="weatherResult"></div>
+  </div>
+
+  <script>
+    async function getWeather() {
+      const city = document.getElementById("cityInput").value;
+      const apiKey = "8dd7df546d12763e9d47965e8c1bf6cc"; 
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("City not found");
+
+        const data = await response.json();
+
+        const temp = data.main.temp;
+        const desc = data.weather[0].description;
+        const icon = data.weather[0].icon;
+        const humidity = data.main.humidity;
+
+        document.getElementById("weatherResult").innerHTML = `
+          <h3>${data.name}</h3>
+          <img class="weather-icon" src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}">
+          <p><strong>${temp}°C</strong></p>
+          <p>${desc}</p>
+          <p>Humidity: ${humidity}%</p>
+        `;
+      } catch (error) {
+        document.getElementById("weatherResult").innerHTML = `<p style="color: red;">${error.message}</p>`;
+      }
+    }
+  </script>
+
+</body>
+</html> -->
+
+
+<!-- 6****Date -->
+<!-- <html>
+  <head></head>
+  <button onclick='document.getElementById("demo").innerHTML=Date()'>Date and Time</button>
+  <p id="demo"></p>
+  </html> -->
+
+  <!-- 5*** Arrow functions -->
+<!-- <html>
+  <head></head>
+  <input type="text" id="input1"></html>
+  <input type="text" id="input2"></html>
+  <button  id="sum" onclick="Sum1">Add</button>
+  <script src="index.js"></script>
+</html>  -->
+
+
+<!-- **How to accept the user input -->
+<!-- <html>
+  <head></head>
+  <input type="text" id="name">
+  <button id="add" onclick="myfunction()">Submit</button>
+  <script src="index.js"></script>
+</html> -->
+
+
+<!-- ***Type conversions -->
+<!-- ***check box and radio buttons -->
+ <!-- <html>
+  <head></head>
+  <input type="checkbox" id="box">
+  <label for="box">Enter</label>
+  <input type="radio" id="rad">
+  <label for="rad">Payment</label>
+  <p id="demo"></p>
+  <p id="val"></p>
+  <button id="result">Submit</button>
+  <script src="index.js"></script>
+</html> -->
+
+
+<!-- Ternary operator -->
+ <!-- Switch Case -->
+<!-- Temperature conversion -->
+<!-- <html>
+  <head></head>
+  <center><h2>Temperature conversion</h2>
+  Enter value<input type="text" id="ip"><br><br>
+  <input type="radio" id="c">
+<label for="c">Fahrenheit to Celsius</label><br>
+ <input type="radio" id="f">
+<label for="f">Celsius to Fahrenheit</label><br><br>
+<button id="enter">Submit</button>
+<p id="result"></p>
+</center>
+  <script src="index.js"></script>
+</html> -->
+
+
+
+<html>
+  <head></head>
+  <h1 id="hw">Welocome</h1>
+<script src="index.js"></script>
+</html>
